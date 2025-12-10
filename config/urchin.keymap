@@ -161,10 +161,10 @@
 
         LHEL {
             bindings = <
-&kp LC(Q)  &kp LC(W)  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans
+&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)  &trans  &trans  &trans  &trans  &trans
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans  &trans  &trans  &trans  &trans
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans  &trans  &trans  &trans
-                                 &trans     &trans     &trans  &trans
+                                 &kp SPACE  &trans     &trans  &trans
             >;
 
             label = "Left Hold Extend Layer";
