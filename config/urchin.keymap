@@ -87,10 +87,10 @@
 
         // both right thumb keys
 
-        combo_accent {
+        combo_function_layer {
             timeout-ms = <200>;
-            key-positions = <32 33>;
-            bindings = <&mo 1>;
+            key-positions = <31 32>;
+            bindings = <&mo 6>;
         };
 
         // internal-left & external-right thumb keys
@@ -134,7 +134,7 @@
 &kp LC(LA(Z))  &kp LC(LA(X))  &kp LA(LC(A))  &kp LA(LC(S))  &trans   &trans  &trans  &trans  &trans  &trans
 &kp LGUI       &kp LCTRL      &kp LSHFT      &kp LALT       &kp TAB  &trans  &trans  &trans  &trans  &trans
 &kp LEFT       &kp UP         &kp DOWN       &kp RIGHT      &trans   &trans  &trans  &trans  &trans  &trans
-                                             &trans         &trans   &trans  &trans
+                                             &trans         &trans   &mo 6   &trans
             >;
         };
 
@@ -168,6 +168,28 @@
             >;
 
             label = "Left Hold Extend Layer";
+        };
+
+        LNL {
+            bindings = <
+&kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &trans  &trans  &trans  &trans  &trans
+&kp N6     &kp N7     &kp N8     &kp N9     &kp N0   &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp MINUS  &kp SPACE  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans  &trans
+                                 &trans     &trans   &trans  &trans
+            >;
+
+            label = "Left Number Layer";
+        };
+
+        FL {
+            bindings = <
+&trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans   &trans   &trans   &trans
+&kp F9  &kp F10     &kp F11           &kp F12     &trans  &trans  &kp F13  &kp F14  &kp F15  &kp F16
+&kp F1  &kp F2      &kp F3            &kp F4      &trans  &trans  &kp F5   &kp F6   &kp F7   &kp F8
+                                      &trans      &trans  &trans  &trans
+            >;
+
+            label = "Function Layer";
         };
 
         // Numbers and high frequency symbols
