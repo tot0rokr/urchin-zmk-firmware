@@ -167,6 +167,30 @@
             timeout-ms = <38>;
         };
 
+        combo_win+e {
+            bindings = <&kp LG(E)>;
+            key-positions = <2 1>;
+            layers = <1>;
+        };
+
+        combo_win+r {
+            bindings = <&kp LG(R)>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        combo_win+v {
+            bindings = <&kp LG(V)>;
+            key-positions = <22 23>;
+            layers = <1>;
+        };
+
+        combo_win+shift+s {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <11 10>;
+            layers = <1>;
+        };
+
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
     };
