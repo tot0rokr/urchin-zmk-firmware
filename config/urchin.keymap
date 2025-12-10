@@ -90,7 +90,7 @@
         combo_accent {
             timeout-ms = <200>;
             key-positions = <32 33>;
-            bindings = <&mo 0>;
+            bindings = <&mo 1>;
         };
 
         // internal-left & external-right thumb keys
@@ -98,7 +98,7 @@
         combo_sym2 {
             timeout-ms = <200>;
             key-positions = <31 33>;
-            bindings = <&mo 0>;
+            bindings = <&mo 1>;
         };
 
         // both left thumb keys
@@ -106,7 +106,7 @@
         combo_settings {
             timeout-ms = <200>;
             key-positions = <30 31>;
-            bindings = <&mo 0>;
+            bindings = <&mo 1>;
         };
 
         // left index & middle fingers (home-row)
@@ -117,6 +117,16 @@
         compatible = "zmk,keymap";
 
         // Base alpha layer
+
+        BL {
+            label = "Base Layer";
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                    &kp U                                  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                    &kp J                                  &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                    &kp M                                  &kp COMMA  &kp DOT  &kp FSLH
+                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 4  &layer_quick_tab 3 RALT  &space_shift_homerow LEFT_SHIFT SPACE
+            >;
+        };
 
         LHL {
             label = "Left Home Layer";
