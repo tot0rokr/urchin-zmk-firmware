@@ -93,29 +93,29 @@
         combo_sl1 {
             timeout-ms = <200>;
             key-positions = <30 31>;
-            bindings = <&mo 1>;
+            bindings = <&mo 6>;
         };
 
         combo_sl2 {
-            bindings = <&mo 7>;
+            bindings = <&mo 6>;
             key-positions = <33 32>;
         };
 
         combo_system {
-            bindings = <&tog 8>;
+            bindings = <&tog 7>;
             key-positions = <30 31 32 33>;
         };
 
         combo_bootloader_reset {
             bindings = <&bootloader>;
             key-positions = <0 10 20>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_system_reset {
             bindings = <&sys_reset>;
             key-positions = <9 19 29>;
-            layers = <8>;
+            layers = <7>;
         };
 
         // left index & middle fingers (home-row)
@@ -143,7 +143,7 @@
 &kp LC(LA(Z))  &kp LC(LA(X))  &kp LA(LC(A))  &kp LA(LC(S))  &trans   &trans  &trans  &trans  &trans  &trans
 &kp LGUI       &kp LCTRL      &kp LSHFT      &kp LALT       &kp TAB  &trans  &trans  &trans  &trans  &trans
 &kp LEFT       &kp UP         &kp DOWN       &kp RIGHT      &trans   &trans  &trans  &trans  &trans  &trans
-                                             &trans         &trans   &mo 6   &trans
+                                             &trans         &trans   &mo 5   &trans
             >;
         };
 
@@ -162,7 +162,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
 &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp LALT  &kp LSHFT  &kp LCTRL  &kp LGUI
 &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-                        &trans  &mo 7   &trans   &trans
+                        &trans  &mo 6   &trans   &trans
             >;
 
             label = "Right Home Layer";
@@ -177,17 +177,6 @@
             >;
 
             label = "Left Hold Extend Layer";
-        };
-
-        LNL {
-            bindings = <
-&kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &none  &none  &none  &none  &none
-&kp N6     &kp N7     &kp N8     &kp N9     &kp N0   &none  &none  &none  &none  &none
-&kp EQUAL  &kp MINUS  &kp SPACE  &kp COMMA  &kp DOT  &none  &none  &none  &none  &none
-                                 &none      &none    &none  &none
-            >;
-
-            label = "Left Number Layer";
         };
 
         FL {
@@ -221,6 +210,17 @@
             >;
 
             label = "Device Layer";
+        };
+
+        LNL {
+            bindings = <
+&kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &none  &none  &none  &none  &none
+&kp N6     &kp N7     &kp N8     &kp N9     &kp N0   &none  &none  &none  &none  &none
+&kp EQUAL  &kp MINUS  &kp SPACE  &kp COMMA  &kp DOT  &none  &none  &none  &none  &none
+                                 &none      &none    &none  &none
+            >;
+
+            label = "Left Number Layer";
         };
 
         // Numbers and high frequency symbols
