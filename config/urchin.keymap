@@ -87,13 +87,6 @@
 
         // both right thumb keys
         // internal-left & external-right thumb keys
-
-        combo_sym2 {
-            timeout-ms = <200>;
-            key-positions = <31 33>;
-            bindings = <&mo 1>;
-        };
-
         // both left thumb keys
 
         combo_sl1 {
@@ -108,8 +101,20 @@
         };
 
         combo_system {
-            bindings = <&none>;
+            bindings = <&tog 8>;
             key-positions = <30 31 32 33>;
+        };
+
+        combo_bootloader_reset {
+            bindings = <&bootloader>;
+            key-positions = <0 10 20>;
+            layers = <8>;
+        };
+
+        combo_system_reset {
+            bindings = <&sys_reset>;
+            key-positions = <9 19 29>;
+            layers = <8>;
         };
 
         // left index & middle fingers (home-row)
@@ -208,10 +213,10 @@
 
         DL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                     &none  &none  &none  &none
             >;
 
             label = "Device Layer";
