@@ -86,13 +86,6 @@
         compatible = "zmk,combos";
 
         // both right thumb keys
-
-        combo_function_layer {
-            timeout-ms = <200>;
-            key-positions = <31 32>;
-            bindings = <&mo 6>;
-        };
-
         // internal-left & external-right thumb keys
 
         combo_sym2 {
@@ -153,7 +146,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
 &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp LALT  &kp LSHFT  &kp LCTRL  &kp LGUI
 &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-                        &trans  &trans  &trans   &trans
+                        &trans  &mo 7   &trans   &trans
             >;
 
             label = "Right Home Layer";
@@ -161,10 +154,10 @@
 
         LHEL {
             bindings = <
-&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)  &trans  &trans  &trans  &trans  &trans
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans  &trans  &trans  &trans
-                                 &kp SPACE  &trans     &trans  &trans
+&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)        &kp LC(T)  &none   &none   &none  &none  &none
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)        &kp LC(G)  &none   &none   &none  &none  &none
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp LC(B)  &none   &none   &none  &none  &none
+                                 &mt LSHFT SPACE  &none      &trans  &trans
             >;
 
             label = "Left Hold Extend Layer";
@@ -190,6 +183,17 @@
             >;
 
             label = "Function Layer";
+        };
+
+        SL {
+            bindings = <
+&none  &none  &kp GRAVE  &kp TILDE  &none  &none  &kp PLUS   &kp EQUAL  &none     &none
+&none  &none  &kp LBKT   &kp RBKT   &none  &none  &kp LPAR   &kp RPAR   &none     &none
+&none  &none  &kp LBRC   &kp RBRC   &none  &none  &kp UNDER  &kp MINUS  &kp PIPE  &kp BSLH
+                         &none      &none  &none  &none
+            >;
+
+            label = "Symbol Layer";
         };
 
         // Numbers and high frequency symbols
