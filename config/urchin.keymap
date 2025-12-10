@@ -118,6 +118,55 @@
             layers = <7>;
         };
 
+        combo_backspace1 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_backspace2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <12 13>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_enter1 {
+            bindings = <&kp ENTER>;
+            key-positions = <16 18>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_enter2 {
+            bindings = <&kp ENTER>;
+            key-positions = <11 13>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_delete1 {
+            bindings = <&kp DEL>;
+            key-positions = <23 22>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
+        combo_delete2 {
+            bindings = <&kp DEL>;
+            key-positions = <26 27>;
+            layers = <0 6>;
+            timeout-ms = <38>;
+        };
+
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
     };
