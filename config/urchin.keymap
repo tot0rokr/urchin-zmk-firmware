@@ -246,7 +246,7 @@
 &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)        &kp LC(T)  &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)        &kp LC(G)  &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(SEMI)
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp LC(B)  &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-                                 &mt LSHFT SPACE  &none      &trans     &trans
+                                 &mt LSHFT SPACE  &none      &none      &none
             >;
 
             label = "Left Hold Extend Layer";
