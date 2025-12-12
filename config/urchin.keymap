@@ -203,10 +203,10 @@
         BL {
             label = "Base Layer";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                    &kp U                                  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                    &kp J                                  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                    &kp M                                  &kp COMMA  &kp DOT  &kp FSLH
-                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 4  &layer_quick_tab 3 RALT  &space_shift_homerow LEFT_SHIFT SPACE
+&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                    &kp U                     &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                    &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                    &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 4  &layer_quick_tab 3 RALT  &layer_quick_tab 6 SPACE
             >;
         };
 
@@ -235,7 +235,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
 &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp LALT  &kp LSHFT  &kp LCTRL  &kp LGUI
 &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-                        &trans  &mo 6   &trans   &trans
+                        &trans  &trans  &trans   &trans
             >;
 
             label = "Right Home Layer";
