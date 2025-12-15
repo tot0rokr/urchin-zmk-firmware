@@ -208,10 +208,10 @@
         BL {
             label = "Base Layer";
             bindings = <
-&kp Q                         &kp W                              &kp E                            &kp R                                  &kp T                   &kp Y                    &kp U                     &kp I      &kp O    &kp P
-&space_shift_homerow LCTRL A  &space_shift_homerow LEFT_SHIFT S  &space_shift_homerow LEFT_ALT D  &kp F                                  &kp G                   &kp H                    &kp J                     &kp K      &kp L    &kp SEMI
-&kp Z                         &kp X                              &kp C                            &kp V                                  &kp B                   &kp N                    &kp M                     &kp COMMA  &kp DOT  &kp FSLH
-                                                                                                  &space_shift_homerow LEFT_SHIFT SPACE  &layer_quick_tab 1 TAB  &layer_quick_tab 3 RALT  &layer_quick_tab 5 SPACE
+&kp Q                         &kp W                              &kp E                            &kp R                                  &kp T                   &kp Y                &kp U                     &kp I      &kp O    &kp P
+&space_shift_homerow LCTRL A  &space_shift_homerow LEFT_SHIFT S  &space_shift_homerow LEFT_ALT D  &kp F                                  &kp G                   &kp H                &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z                         &kp X                              &kp C                            &kp V                                  &kp B                   &kp N                &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                                                                                                  &space_shift_homerow LEFT_SHIFT SPACE  &layer_quick_tab 1 TAB  &rhumb_hold_tap 3 0  &layer_quick_tab 5 SPACE
             >;
         };
 
