@@ -51,7 +51,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
 
         layer_quick_tab: layer_quick_tab {
