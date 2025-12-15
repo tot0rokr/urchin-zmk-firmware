@@ -37,18 +37,18 @@
             compatible = "zmk,behavior-hold-tap";
             label = "QUICK_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
 
-        space_shift_homerow: space_shift_homerow {
+        homerow: homerow {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_SHIFT_HOMEROW";
+            label = "HOMEROW";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -208,10 +208,10 @@
         BL {
             label = "Base Layer";
             bindings = <
-&kp Q                         &kp W                              &kp E                            &kp R                                  &kp T                   &kp Y                &kp U                     &kp I      &kp O    &kp P
-&space_shift_homerow LCTRL A  &space_shift_homerow LEFT_SHIFT S  &space_shift_homerow LEFT_ALT D  &kp F                                  &kp G                   &kp H                &kp J                     &kp K      &kp L    &kp SEMI
-&kp Z                         &kp X                              &kp C                            &kp V                                  &kp B                   &kp N                &kp M                     &kp COMMA  &kp DOT  &kp FSLH
-                                                                                                  &space_shift_homerow LEFT_SHIFT SPACE  &layer_quick_tab 1 TAB  &rhumb_hold_tap 3 0  &layer_quick_tab 5 SPACE
+&kp Q             &kp W                  &kp E                &kp R                      &kp T                   &kp Y                &kp U                     &kp I      &kp O    &kp P
+&homerow LCTRL A  &homerow LEFT_SHIFT S  &homerow LEFT_ALT D  &kp F                      &kp G                   &kp H                &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z             &kp X                  &kp C                &kp V                      &kp B                   &kp N                &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                                                              &homerow LEFT_SHIFT SPACE  &layer_quick_tab 1 TAB  &rhumb_hold_tap 3 0  &layer_quick_tab 5 SPACE
             >;
         };
 
@@ -304,10 +304,10 @@
         layer_9 {
             label = "Base Layer copied";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                &kp U                     &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                &kp J                     &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                &kp M                     &kp COMMA  &kp DOT  &kp FSLH
-                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 9  &rhumb_hold_tap 3 0  &layer_quick_tab 5 SPACE
+&kp Q  &kp W  &kp E  &kp R                      &kp T                      &kp Y                &kp U                     &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F                      &kp G                      &kp H                &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V                      &kp B                      &kp N                &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                     &homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 9  &rhumb_hold_tap 3 0  &layer_quick_tab 5 SPACE
             >;
         };
 
