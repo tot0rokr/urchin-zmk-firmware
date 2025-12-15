@@ -47,11 +47,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
-
-            require-prior-idle-ms = <150>;
         };
 
         layer_quick_tab: layer_quick_tab {
