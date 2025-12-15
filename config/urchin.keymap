@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_QUICK_TAB";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
@@ -90,45 +90,34 @@
         // internal-left & external-right thumb keys
         // both left thumb keys
 
-        combo_sl1 {
-            timeout-ms = <200>;
-            key-positions = <30 31>;
-            bindings = <&mo 6>;
-        };
-
-        combo_sl2 {
-            bindings = <&mo 6>;
-            key-positions = <33 32>;
-        };
-
         combo_system {
-            bindings = <&to 7>;
+            bindings = <&to 6>;
             key-positions = <30 31 32 33>;
         };
 
         combo_bootloader_reset {
             bindings = <&bootloader>;
             key-positions = <0 10 20>;
-            layers = <7>;
+            layers = <6>;
         };
 
         combo_system_reset {
             bindings = <&sys_reset>;
             key-positions = <9 19 29>;
-            layers = <7>;
+            layers = <6>;
         };
 
         combo_backspace1 {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
         combo_backspace2 {
             bindings = <&kp BACKSPACE>;
             key-positions = <12 13>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
@@ -142,28 +131,28 @@
         combo_enter1 {
             bindings = <&kp ENTER>;
             key-positions = <16 18>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
         combo_enter2 {
             bindings = <&kp ENTER>;
             key-positions = <11 13>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
         combo_delete1 {
             bindings = <&kp DEL>;
             key-positions = <23 22>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
         combo_delete2 {
             bindings = <&kp DEL>;
             key-positions = <26 27>;
-            layers = <0 6>;
+            layers = <0 5>;
             timeout-ms = <38>;
         };
 
@@ -203,10 +192,10 @@
         BL {
             label = "Base Layer";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                    &kp U                     &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                    &kp J                     &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                    &kp M                     &kp COMMA  &kp DOT  &kp FSLH
-                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 4  &layer_quick_tab 3 RALT  &layer_quick_tab 6 SPACE
+&kp Q                         &kp W                              &kp E                            &kp R                                  &kp T                   &kp Y                    &kp U                     &kp I      &kp O    &kp P
+&space_shift_homerow LCTRL A  &space_shift_homerow LEFT_SHIFT S  &space_shift_homerow LEFT_ALT D  &kp F                                  &kp G                   &kp H                    &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z                         &kp X                              &kp C                            &kp V                                  &kp B                   &kp N                    &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                                                                                                  &space_shift_homerow LEFT_SHIFT SPACE  &layer_quick_tab 1 TAB  &layer_quick_tab 3 RALT  &layer_quick_tab 5 SPACE
             >;
         };
 
@@ -215,8 +204,8 @@
             bindings = <
 &kp LC(LA(Z))  &kp LC(LA(X))  &kp LA(LC(A))  &kp LA(LC(S))  &trans   &trans  &trans  &trans  &trans  &trans
 &kp LGUI       &kp LCTRL      &kp LSHFT      &kp LALT       &kp TAB  &trans  &trans  &trans  &trans  &trans
-&kp LEFT       &kp UP         &kp DOWN       &kp RIGHT      &trans   &trans  &trans  &trans  &trans  &trans
-                                             &trans         &trans   &mo 5   &trans
+&kp LEFT       &kp UP         &kp DOWN       &kp RIGHT      &mo 4    &trans  &trans  &trans  &trans  &trans
+                                             &trans         &trans   &trans  &trans
             >;
         };
 
@@ -239,17 +228,6 @@
             >;
 
             label = "Right Home Layer";
-        };
-
-        LHEL {
-            bindings = <
-&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)        &kp LC(T)  &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)        &kp LC(G)  &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(SEMI)
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp LC(B)  &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
-                                 &mt LSHFT SPACE  &none      &none      &none
-            >;
-
-            label = "Left Hold Extend Layer";
         };
 
         FL {
@@ -294,6 +272,27 @@
             >;
 
             label = "Left Number Layer";
+        };
+
+        LHEL {
+            bindings = <
+&kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)        &kp LC(T)  &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)        &kp LC(G)  &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(SEMI)
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp LC(B)  &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)
+                                 &mt LSHFT SPACE  &none      &none      &none
+            >;
+
+            label = "Left Hold Extend Layer";
+        };
+
+        layer_9 {
+            label = "Base Layer copied";
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R                                  &kp T                      &kp Y                    &kp U                     &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F                                  &kp G                      &kp H                    &kp J                     &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V                                  &kp B                      &kp N                    &kp M                     &kp COMMA  &kp DOT  &kp FSLH
+                     &space_shift_homerow LEFT_SHIFT SPACE  &hold_stick_tab_layer 1 9  &layer_quick_tab 3 RALT  &layer_quick_tab 5 SPACE
+            >;
         };
 
         // Numbers and high frequency symbols
