@@ -48,8 +48,10 @@
             label = "HOMEROW";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <150>;
         };
 
         layer_quick_tab: layer_quick_tab {
@@ -331,5 +333,14 @@
         // Low frequency symbols.
         // Used to type regional accents.
         // Used to change the keyboard's settings.LHL {};
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        function_layer {
+            if-layers = <3 1>;
+            then-layer = <4>;
+        };
     };
 };
