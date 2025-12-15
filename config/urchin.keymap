@@ -156,6 +156,7 @@
             key-positions = <11 13>;
             layers = <0 5>;
             timeout-ms = <38>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_delete1 {
